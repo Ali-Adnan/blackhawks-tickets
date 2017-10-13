@@ -1062,91 +1062,6 @@ ul {
     }
 }
 
-.md-giveaway-header {
-    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8)), url("http://storage.pardot.com/80762/86194/give_away_header_bg.jpg");
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-    height: auto;
-    margin-bottom: 30px
-}
-
-.md-giveaway-header .jumbotron {
-    margin: 0px !important;
-    background-color: transparent !important;
-    border-radius: 0px !important
-}
-
-.md-giveaway-header a {
-    color: #fff
-}
-
-.md-giveaway-header a:hover {
-    color: #fff
-}
-
-.md-giveaway-header a:visited {
-    color: #fff
-}
-
-.md-giveaway-header h1 {
-    margin-top: 0;
-    font-size: 2.1rem !important;
-    color: #fff !important
-}
-
-.md-giveaway-header h2 {
-    color: #fff !important;
-    margin-top: 50px !important
-}
-
-.md-giveaway-header p {
-    color: white;
-    font-size: 2rem
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    .md-giveaway-header .jumbotron {
-        padding: 100px 20px 20px 20px !important
-    }
-    .md-giveaway-header h2 {
-        color: #fff;
-        margin-top: 20px;
-        margin-left: 20px
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .md-giveaway-header .jumbotron {
-        padding: 100px 20px 20px 20px !important
-    }
-    .md-giveaway-header h2 {
-        color: #fff;
-        margin-top: 20px;
-        margin-left: 20px
-    }
-}
-
-.md-article-header {
-    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8)), url("http://storage.pardot.com/80762/86284/industrial_bg.jpg");
-    background-repeat: no-repeat;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    background-position: center center
-}
-
-.md-article-header .mk-header-caret {
-    background-image: url(http://mkt-element-14.com/files/pardot-img/header-caret.png);
-    background-position: bottom left;
-    background-repeat: no-repeat
-}
-
-.md-article-header h1 {
-    margin-bottom: 50px;
-    color: #fff;
-    margin-left: 15px
-}
-
 .md-day-names {
 	background-color: #333;
 	color: white;
@@ -2686,10 +2601,13 @@ header {
 }
 
 #calendar a {
-	color: #fff;
+	color: #333;
 	text-decoration: underline;
-}
 
+}
+.white {
+    background-color: white;
+}
 #calendar ul {
 	list-style: none;
 	padding: 0;
@@ -2741,8 +2659,11 @@ header {
 	background: #CE1126;
 	color: fff;
 }
-#calendar .home-game p, h5 {
+#calendar .home-game p, h5, h3 {
 	color: #fff;
+}
+#calendar .away-game h3 {
+    color: #333;
 }
 #calendar .home-game:hover {
 	background: #b60f22;
@@ -2819,7 +2740,39 @@ header {
 .bg-red {
 	background: #ce1126;
 }
- .header h1, .header p {
+ .header h1, .header p  {
 	color: #fff !important;
+    padding:0 5px;
 }
+.header h2 {
+    color: #fff !important;
+    padding-left: 5px;
+}
+
+ a:hover {
+        color: #CE1126 !important;
+    }
+
+
+    .padding {
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+        ;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    @media screen and (max-width: 435px) {
+        .desktop {
+            display: none;
+        }
+        .mobile {
+            display: block;
+        }
+    }
+    .mobile table {
+        padding-bottom: 15px;
+    }
 /*# sourceMappingURL=pardot-mkt.css.map */
